@@ -1,0 +1,39 @@
+.btn {
+    background-color: var(--btn2);
+    color: var(--light-text);
+    padding: 16px 48px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover1);
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+}
+
+.title::before {
+    content: "";
+    width: 20px;
+    height: 40px; 
+    background-color: #D94343;
+    border-radius: 4px;
+    margin-right: 16px; 
+    display: inline-block;
+}
+
+
+.subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--dark);
+}
+

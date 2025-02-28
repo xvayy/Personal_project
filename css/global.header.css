@@ -1,0 +1,200 @@
+.header__top {
+    background-color: var(--dark);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header__top-text {
+    font-size: 14px;
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 8px;
+}
+
+.header__top-text a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.header__main {
+    padding-top: 40px;
+    padding-bottom: 16px;
+    border-bottom: 0.5px solid var(--primary);
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__links {
+    display: flex;
+    gap: 48px;
+    font-size: 16px;
+    color: var(--dark);
+}
+
+.header__controls {
+    display: flex;
+    gap: 24px;
+} 
+
+.header__controls-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__input {
+    padding: 10px 70px 10px 20px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: var(--secondary);
+    border: none;
+}
+
+.header__input-button {
+    position: absolute;
+    top: 25%;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.header__controls-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__burger {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .header__links {
+        gap: 28px;
+    }
+    .header__input {
+        padding: 10px 35px 10px 15px;
+        outline: none;
+        transition: all 0.3s ease;
+        font-size: 12px;
+        border-radius: 4px;
+        background-color: var(--secondary);
+        border: none;
+    }
+    .header__controls-icons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__links {
+        gap: 18px;
+    }
+} 
+
+@media (max-width: 768px) {
+    .header__top-text {
+        flex-wrap: wrap;
+    }
+    .header__main {
+        position: relative;
+    }
+    .header__nav {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        background: var(--dark);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+    }
+    .header__nav--active {
+        display: block;
+    }
+    .header__links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+        color: var(--light-text);
+    }
+    .header__burger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        z-index: 101;
+        padding: 5px;
+        border: 1px solid var(--bg);
+        border-radius: 4px;
+    }
+    .header__burger-line {
+        width: 100%;
+        height: 2px;
+        background-color: var(--dark);
+        border-radius: 3px;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+    .header__burger-line:nth-child(1){
+        transform: translateY(-8px);
+
+    }
+    .header__burger-line:nth-child(2){
+        transform: translateY(0px);
+
+    }
+    .header__burger-line:nth-child(3){
+        transform: translateY(8px);
+    }
+    .header__burger--active .header__burger-line:nth-child(1) {
+        transform: rotate(45deg);
+        background-color: var(--bg);
+    }
+    .header__burger--active .header__burger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__burger--active .header__burger-line:nth-child(3) {
+        transform: rotate(-45deg);
+        background-color: var(--bg);
+    }
+
+
+} 
+
+@media (max-width: 576px) {
+    .header__logo {
+        margin-right: auto;
+    }
+    .header__menu {
+        justify-content: unset;
+    }
+    .header__controls-input {
+        display: none;
+    }
+    .header__controls-icons {
+        margin-right: 10px;
+    }
+}
