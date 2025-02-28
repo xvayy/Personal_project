@@ -1,0 +1,39 @@
+.experience {
+    margin-top: 140px;
+    margin-bottom: 71px;
+}
+
+.experience__wrapper {
+    padding: 70px 56px;
+    display: flex;
+    justify-content: start;
+    background-image: url("../img/index/experience.png");
+    background-position: 80% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--dark);
+    border-radius: 4px;
+    z-index: 1;
+    position: relative;
+}
+
+.experience__title {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--btn1);
+}
+
+.experience__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: var(--light-text);
+    max-width: 444px;
+}
+
+.experience__btn {
+    background-color: var(--btn1);
+    line-height: 1.4;
+}
