@@ -33,7 +33,45 @@
     max-width: 444px;
 }
 
+.experience__countdown {
+    margin-bottom: 32px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    padding: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+.time-box span {
+    font-weight: 700;
+    font-size: 16px;    
+}
+
 .experience__btn {
     background-color: var(--btn1);
     line-height: 1.4;
+}
+
+@media (max-width: 550px) {
+    .experience__wrapper {
+        padding: 40px;
+    }
+    .experience__subtitle {
+        font-size: 30px;
+        max-width: none;
+    }
+    
 }
